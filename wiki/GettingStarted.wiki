@@ -190,4 +190,4 @@ public class HideTest extends ScreencompareTestCase {
 }}}
 This will result in three screenshots in your "data/screens/"-folder. The first with the full page, the second without ad, and the third without text. 
 
-<wiki:video url="http://www.youtube.com/watch?v=rg_U1vAq0rs"/>
+<wiki:video url="http://www.youtube.com/watch?v=4aLL029tyuM"/>
