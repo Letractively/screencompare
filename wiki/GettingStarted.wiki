@@ -166,7 +166,7 @@ Tests like these allow you to check for undetected UI-glitches that might result
 
 
 == !HideTest ==
-The last example will explain how to hide specific elements on a webpage with _hideElement()_, which can be useful if you have ads on a page, but don't want to compare them.<br/>
+This last example shows you how to hide specific elements on a webpage with _hideElement()_, which can be useful if you have ads on a page, but don't want to compare them.<br/>
 Additionally _hideText()_ is used to make all text transparent. Often text is rendered differently in different browsers, which is usually not a bug, so you might want to ignore text in your visual comparison.
 {{{
 import screencompare.*;
