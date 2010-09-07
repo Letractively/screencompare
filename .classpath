@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="examples/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/examples"/>
+	<classpathentry kind="lib" path="lib/iText-5.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-1/selenium-java-client-driver-sources.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-1/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-1/selenium-server-sources.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-1/selenium-server.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/cssparser-0.9.5.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/google-collect-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/hamcrest-all-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/htmlunit-2.7.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/htmlunit-core-js-2.7.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/jmock-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/jmock-junit3-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/jna.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/json-20080701.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/nekohtml-1.9.14.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/selenium-java-2.0a4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/selenium-java-src-2.0a4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/xercesImpl-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-2/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
