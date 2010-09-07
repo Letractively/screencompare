@@ -1,5 +1,4 @@
 #/bin/sh
 
-rm -rf doc/*
-javadoc -d doc -sourcepath src -subpackages screencompare
+javadoc -quiet -notimestamp -d doc -sourcepath src -subpackages screencompare
 
