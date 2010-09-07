@@ -7,20 +7,74 @@ After you downloaded the Screencompare-package, you'll have three folders:
  * *examples*: Example tests, some of which are described on this page
 
 You'll also see the following scripts for easy test-running from the command line:
-* *startSelenium.sh/bat*: Start the Selenium server which is needed for almost all tests
-* *runExample.sh/bat*: Run one of the example tests (specify its name as the only parameter!)
+ * *startSelenium.sh/bat*: Start the Selenium server which is needed for almost all tests
+ * *runExample.sh/bat*: Run one of the example tests
 
-In the following examples I'm assuming you're using Mac OS X. If you're using Windows, just run the ".bat" instead of the ".sh" files.
-You'll need the JDK and the involved browsers installed.
+= Examples =
+The Selenium-server needs to be running for these tests, you can start it from a terminal with the included script:
 
-== ScreenshotsMacTest/ScreenshotsWinTest ==
+Mac OS X: {{{./startSelenium.sh}}}<br/>
+Windows: {{{startSelenium.bat}}}
+
+Then start the test case in a second terminal by specifying an example's name as parameter for "runExample.sh", eg:
+
+Mac OS X: {{{./runExample.sh ScreenshotsMacTest}}}<br/>
+Windows: {{{runExample.bat ScreenshotsMacTest}}}
+
+== !ScreenshotsWinTest ==
 We'll start by executing a basic test-case which opens a webpage in various browsers and saves the screenshots to disk.
+{{{
+import screencompare.*;
+import screencompare.browser.*;
+import screencompare.screen.*;
 
-Start the selenium server in a terminal:
-{{{
-./startSelenium.sh
+public class ScreenshotsWinTest extends ScreencompareTestCase {
+
+	public void test() throws Exception {
+		Browser[] browsers = { Browser.FIREFOX, Browser.IE, Browser.CHROME };
+
+		for (Browser browser : browsers) {
+			start("http://www.google.ch", browser);
+			captureScreen().save();
+			stop();
+		}
+	}
+
+}
 }}}
-Start the test case in a second terminal:
+This will result in three screenshots from the different browsers in your "data/screens/" folder.
+
+<wiki:video url="http://www.youtube.com/watch?v=JFA-hXStq-k"/>
+
+
+== CompareFirefoxIETest ==
+This will open two sites in Firefox and IE. The resulting screenshots are compared by _verifySame()_. A threshold of 0.05 is passed along, so 5% of the pixels may differ for the test to succeed.
 {{{
-./runExample.sh ScreenshotsMacTest
+import screencompare.*;
+import screencompare.browser.*;
+import screencompare.screen.*;
+
+public class CompareFirefoxIETest extends ScreencompareTestCase {
+
+	public void test() throws Exception {
+		String[] urls = {"http://www.google.ch",
+						"http://weatherflash.com/"};
+
+		for (String url:urls) {
+			start(url, Browser.FIREFOX);
+			Screen firefox = captureScreen();
+			stop();
+			
+			start(url, Browser.IE);
+			Screen ie = captureScreen();
+			stop();
+			
+			verifySame(firefox, ie, 0.05f, Alignment.TOP_CENTER);
+		}
+	}
+
+}
 }}}
+In this case both visited webpages differ more than 5% in IE6 and Firefox. A PDF-report for each page is created in your "data/reports/"-folder. You can take a look at an example report [http://www.retokaiser.com/Projects/screencompare/report_CompareFirefoxIETest.pdf here].
+
+<wiki:video url="http://www.youtube.com/watch?v=e_tKplaAtZ4"/>
