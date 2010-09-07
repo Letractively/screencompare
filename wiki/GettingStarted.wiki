@@ -9,13 +9,19 @@ You'll also see the following scripts for easy test-running from the command lin
  * *runExample.sh/bat*: Run one of the example tests
 
 
+= Requirements =
+ * Windows or Mac OS X
+ * JRE & JDK (_java_ and _javac_ on your path)
+ * The browsers you'd like to run tests with
+
+
 = Examples =
 The Selenium-server needs to be running for these tests, you can start it from a terminal with the included script:
 
 Mac OS X: {{{./startSelenium.sh}}}<br/>
 Windows: {{{startSelenium.bat}}}
 
-Then start the test case in a second terminal by specifying an example's name as parameter for "runExample.sh", eg:
+Then start the test case in a second terminal by specifying an example's name as parameter for "runExample.sh":
 
 Mac OS X: {{{./runExample.sh ScreenshotsMacTest}}}<br/>
 Windows: {{{runExample.bat ScreenshotsMacTest}}}
