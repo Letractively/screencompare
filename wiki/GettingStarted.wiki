@@ -1,5 +1,5 @@
 = Introduction =
-After you downloaded the Screencompare-package, you'll have three folders:
+After you [http://code.google.com/p/screencompare/downloads/list downloaded] the Screencompare-package, you'll have three folders:
  * *lib*: Contains the "screencompare.jar" plus all other required jars (Selenium, JUnit, iText, ...)
  * *data*: Output like screenshots and pdf-reports will be stored here
  * *examples*: Example tests, some of which are described on this page
