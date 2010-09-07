@@ -82,7 +82,7 @@ In this case both visited webpages differ more than 5% in IE6 and Firefox. A PDF
 <wiki:video url="http://www.youtube.com/watch?v=e_tKplaAtZ4"/>
 
 
-== CompareFirefoxSafariTest ==
+== !CompareFirefoxSafariTest ==
 The same goal as above, but with Firefox and Safari for testing on Mac OS X.
 {{{
 import screencompare.*;
@@ -114,7 +114,7 @@ public class CompareFirefoxSafariTest extends ScreencompareTestCase {
 <wiki:video url="http://www.youtube.com/watch?v=P4MyFk18mdg"/>
 
 
-== RegressionTest  ==
+== !RegressionTest  ==
 The idea of this test is to compare an old and new version of a website visually, let's say
  * _http://www.retokaiser.com/.old/_ is the old version and
  * _http://www.retokaiser.com/_ is the new version.
