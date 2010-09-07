@@ -163,3 +163,31 @@ This test will fail and create a PDF-report, since the page _"/Unterrichtsmateri
 Tests like these allow you to check for undetected UI-glitches that might result when you change something on a website or web application. You could also store screenshots of some version to disk, and later on compare them with another version of the website (See _!RegressionStore.java_ and _!RegressionStoredTest.java_).
 
 <wiki:video url="http://www.youtube.com/watch?v=rg_U1vAq0rs"/>
+
+
+== !HideTest ==
+The last example will explain how to hide specific elements on a webpage with _hideElement()_, which can be useful if you have ads on a page, but don't want to compare them.<br/>
+Additionally _hideText()_ is used to make all text transparent. Often text is rendered differently in different browsers, which is usually not a bug, so you might want to ignore text in your visual comparison.
+{{{
+import screencompare.*;
+import screencompare.browser.*;
+import screencompare.screen.*;
+import screencompare.screen.Screen.Alignment;
+
+public class HideTest extends ScreencompareTestCase {
+
+	public void test() throws Exception {
+		start("http://photography.nationalgeographic.com/photo-of-the-day/", Browser.FIREFOX);
+		captureScreen().save("nationalgeographic-1.png");
+		hideElement("headerboard");
+		captureScreen().save("nationalgeographic-2.png");
+		hideText();
+		captureScreen().save("nationalgeographic-3.png");
+		stop();
+	}
+
+}
+}}}
+This will result in three screenshots in your "data/screens/"-folder. The first with the full page, the second without ad, and the third without text. 
+
+<wiki:video url="http://www.youtube.com/watch?v=rg_U1vAq0rs"/>
