@@ -151,6 +151,6 @@ public class RegressionTest extends ScreencompareTestCase {
 }
 }}}
 This test will fail and create a PDF-report, since the page _"/Unterrichtsmaterialien Informatik/"_ has changed between the versions. <br/>
-Tests like these allow you to check for undetected UI-glitches that might result when you change something on a website or web application. You could of course also store screenshots of some version to disk, and later on compare them with another version of the website (See _RegressionStore.java_ and _RegressionStoredTest.java_).
+Tests like these allow you to check for undetected UI-glitches that might result when you change something on a website or web application. You could of course also store screenshots of some version to disk, and later on compare them with another version of the website (See _!RegressionStore.java_ and _!RegressionStoredTest.java_).
 
 <wiki:video url="http://www.youtube.com/watch?v=rg_U1vAq0rs"/>
