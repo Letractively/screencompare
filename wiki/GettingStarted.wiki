@@ -1,5 +1,3 @@
-#Getting started with examples
-
 = Introduction =
 After you downloaded the Screencompare-package, you'll have three folders:
  * *lib*: Contains the "screencompare.jar" plus all other required jars (Selenium, JUnit, iText, ...)
