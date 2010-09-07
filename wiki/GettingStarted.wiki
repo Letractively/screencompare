@@ -1,0 +1,26 @@
+#Getting started with examples
+
+= Introduction =
+After you downloaded the Screencompare-package, you'll have three folders:
+ * *lib*: Contains the "screencompare.jar" plus all other required jars (Selenium, JUnit, iText, ...)
+ * *data*: Output like screenshots and pdf-reports will be stored here
+ * *examples*: Example tests, some of which are described on this page
+
+You'll also see the following scripts for easy test-running from the command line:
+* *startSelenium.sh/bat*: Start the Selenium server which is needed for almost all tests
+* *runExample.sh/bat*: Run one of the example tests (specify its name as the only parameter!)
+
+In the following examples I'm assuming you're using Mac OS X. If you're using Windows, just run the ".bat" instead of the ".sh" files.
+You'll need the JDK and the involved browsers installed.
+
+== ScreenshotsMacTest/ScreenshotsWinTest ==
+We'll start by executing a basic test-case which opens a webpage in various browsers and saves the screenshots to disk.
+
+Start the selenium server in a terminal:
+{{{
+./startSelenium.sh
+}}}
+Start the test case in a second terminal:
+{{{
+./runExample.sh ScreenshotsMacTest
+}}}
