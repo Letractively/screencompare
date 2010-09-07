@@ -27,6 +27,7 @@ We'll start by executing a basic test-case which opens a webpage in various brow
 import screencompare.*;
 import screencompare.browser.*;
 import screencompare.screen.*;
+import screencompare.screen.Screen.Alignment;
 
 public class ScreenshotsWinTest extends ScreencompareTestCase {
 
@@ -53,6 +54,7 @@ This will open two sites in Firefox and IE. The resulting screenshots are compar
 import screencompare.*;
 import screencompare.browser.*;
 import screencompare.screen.*;
+import screencompare.screen.Screen.Alignment;
 
 public class CompareFirefoxIETest extends ScreencompareTestCase {
 
@@ -86,6 +88,7 @@ The same goal as above, but with Firefox and Safari for testing on Mac OS X.
 import screencompare.*;
 import screencompare.browser.*;
 import screencompare.screen.*;
+import screencompare.screen.Screen.Alignment;
 
 public class CompareFirefoxSafariTest extends ScreencompareTestCase {
 
@@ -121,6 +124,7 @@ We'd like to check whether some pages on this site have changed between the vers
 import screencompare.*;
 import screencompare.browser.*;
 import screencompare.screen.*;
+import screencompare.screen.Screen.Alignment;
 
 public class RegressionTest extends ScreencompareTestCase {
 
